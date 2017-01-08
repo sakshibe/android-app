@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_legislator_view_det"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.pavan.tryapp.legislatorViewDet"
+    tools:showIn="@layout/activity_legislator_view_det">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+
+            <TableRow>
+                <ImageView
+                    android:id="@+id/fb"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:paddingStart="30dp"
+                    android:src="@drawable/f"
+                    />
+
+                <ImageView
+                    android:id="@+id/tw"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:paddingLeft="30dp"
+                    android:src="@drawable/t"
+                    />
+
+                <ImageView
+                    android:id="@+id/wb"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:paddingLeft="30dp"
+                    android:src="@drawable/w"
+                    />
+                <ImageView
+                    android:id="@+id/starLF"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:paddingLeft="30dp"
+                    android:src="@drawable/ic_fav"
+                    />
+
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TableRow>
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="90dp"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:id="@+id/imageViewDetL"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="10dp"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/partId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="20dp"
+
+                />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Name:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="49dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="49dp"
+                android:textSize="15dp"
+                android:paddingLeft="80dp"
+                android:id="@+id/nameId"
+                android:textColor="#000000"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Email:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="49dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="49dp"
+                android:textSize="15dp"
+                android:paddingLeft="80dp"
+                android:id="@+id/emailId"
+                android:textColor="#000000"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Chamber:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="49dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="49dp"
+                android:textSize="15dp"
+                android:paddingLeft="80dp"
+                android:id="@+id/chambId"
+                android:textColor="#000000"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Contact:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="49dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="49dp"
+                android:textSize="15dp"
+                android:paddingLeft="80dp"
+                android:id="@+id/contactId"
+                android:textColor="#000000"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Start Term:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="49dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="49dp"
+                android:textSize="15dp"
+                android:paddingLeft="80dp"
+                android:id="@+id/startId"
+                android:textColor="#000000"/>
+        </TableRow>
+
+
+        <TableRow>
+            <TextView
+                android:text="End Term:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="49dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="49dp"
+                android:textSize="15dp"
+                android:paddingLeft="80dp"
+                android:id="@+id/endId"
+                android:textColor="#000000"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Term:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="49dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="49dp"
+                android:textSize="15dp"
+                android:paddingLeft="80dp"
+                android:id="@+id/termId"
+                android:textColor="#000000"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Office:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="49dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="49dp"
+                android:textSize="15dp"
+                android:paddingLeft="80dp"
+                android:id="@+id/ofcId"
+                android:textColor="#000000"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="State:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="49dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="49dp"
+                android:textSize="15dp"
+                android:paddingLeft="80dp"
+                android:id="@+id/stId"
+                android:textColor="#000000"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Fax:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="49dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="49dp"
+                android:textSize="15dp"
+                android:paddingLeft="80dp"
+                android:id="@+id/faxId"
+                android:textColor="#000000"/>
+        </TableRow>
+
+
+        <TableRow>
+            <TextView
+                android:text="Birthday:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="49dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="49dp"
+                android:textSize="15dp"
+                android:paddingLeft="80dp"
+                android:id="@+id/bdayId"
+                android:textColor="#000000"/>
+        </TableRow>
+
+    </TableLayout>
+</ScrollView>
+
+</RelativeLayout>
